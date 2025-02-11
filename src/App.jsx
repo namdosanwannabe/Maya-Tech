@@ -1,14 +1,15 @@
-import './App.css'
-import Header from './components/Header'
+import './App.css';
+import Header from './components/Header';
+import Hero from './components/Hero';
 
 function App() {
     return (
-        <div className='bg-white h-screen mx-auto'>
+        <div className="relative bg-white h-screen mx-auto">
             <Header />
-            <div className='mx-auto max-w-[1168px] h-screen text-black pt-24'>
-            </div>
+            <Hero />
+            <div className='bg-white h-screen'></div>
         </div>
-    )
+    );
 }
 
-export default App
+export default App;

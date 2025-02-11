@@ -19,6 +19,8 @@ export default {
                     DEFAULT: "#525252",
                     muted: "#707070",
                     light: "#E5E7EB",
+                    lighter: "#F3F4F6",
+
                 },
 
                 // Base Colors
