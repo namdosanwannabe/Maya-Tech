@@ -4,7 +4,7 @@ import RightArrow from '../assets/icons/right-arrow-icon.svg'
 
 const Hero = () => {
     return (
-        <main className="relative mx-auto max-w-[1168px] h-screen text-black pt-24 flex items-center justify-center">
+        <section id='home' className="relative mx-auto max-w-[1168px] h-screen text-black pt-24 flex items-center justify-center">
             <div className="grid-background absolute inset-0 opacity-80"></div>
 
             <div className="relative z-10 text-center">
@@ -43,7 +43,7 @@ const Hero = () => {
                     <button type="button" className='px-8 py-4 rounded-full border-2 border-gray-light'>Learn More</button>
                 </div>
             </div>
-        </main>
+        </section>
     )
 }
 
