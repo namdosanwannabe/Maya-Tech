@@ -1,5 +1,6 @@
-import React from 'react'
-import { motion } from 'motion/react'
+import React, { useState } from 'react'
+import { animate, motion, useMotionValue, useTransform } from "motion/react"
+import { useEffect } from "react"
 
 import ExpIcon from '../assets/icons/expertise-icon.svg';
 import CollabIcon from '../assets/icons/collab-icon.svg';
@@ -101,10 +102,24 @@ const WhatWeDo = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, ease: "easeOut" }}
                 >
-                    <div className='relative overflow-hidden rounded-2xl shadow-[0px_4px_40px_rgba(0,0,0,0.1)]'>
-                        <img src={HeroImage} alt="Table with Laptop" />
-                    </div>
+                    <div className='relative'>
+                        <img className='rounded-2xl shadow-[0px_4px_40px_rgba(0,0,0,0.1)]' src={HeroImage} alt="Table with Laptop" />
 
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
+                            transition={{ duration: 0.8, ease: "easeOut" }}
+                            className="w-auto absolute rounded-2xl left-1/2 bottom-0 transform -translate-x-1/2 translate-y-1/2 p-10 bg-primary/75 text-white backdrop-blur-sm flex gap-8">
+                            <div className='flex flex-col justify-center items-center gap-3'>
+                                <p className='text-4xl font-extrabold'>2+</p>
+                                <p className='text-sm font-semibold whitespace-nowrap'>Years of experience</p>
+                            </div>
+                            <div className='flex flex-col justify-center items-center gap-3'>
+                                <p className='text-4xl font-extrabold'>50+</p>
+                                <p className='text-sm font-semibold whitespace-nowrap'>Projects delivered</p>
+                            </div>
+                        </motion.div>
+                    </div>
                 </motion.div>
             </div>
         </section>
