@@ -10,7 +10,7 @@ import HeroImage from '../assets/icons/what-we-do-hero-image.png';
 const WhatWeDo = () => {
 
     return (
-        <section id='what-we-do' className='mx-auto max-w-[1168px] h-screen text-black pt-6 px-6 lg:px-8'>
+        <section id='what-we-do' className='mx-auto max-w-[1168px] h-screen text-black pt-6 px-6 lg:px-8 mb-24'>
             <motion.div
                 className='w-full flex flex-col items-center justify-center text-center'
                 initial={{ opacity: 0, y: 30 }}
@@ -109,13 +109,13 @@ const WhatWeDo = () => {
                             initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
                             transition={{ duration: 0.8, ease: "easeOut" }}
-                            className="w-auto absolute rounded-2xl left-1/2 bottom-0 transform -translate-x-1/2 translate-y-1/2 p-10 bg-primary/75 text-white backdrop-blur-sm flex gap-8">
+                            className="w-auto absolute rounded-2xl left-1/2 bottom-0 transform -translate-x-1/2 translate-y-1/2 p-10 bg-primary/90 text-white backdrop-blur-sm flex gap-8">
                             <div className='flex flex-col justify-center items-center gap-3'>
-                                <p className='text-4xl font-extrabold'>2+</p>
+                                <p className='text-5xl font-extrabold'>2+</p>
                                 <p className='text-sm font-semibold whitespace-nowrap'>Years of experience</p>
                             </div>
                             <div className='flex flex-col justify-center items-center gap-3'>
-                                <p className='text-4xl font-extrabold'>50+</p>
+                                <p className='text-5xl font-extrabold'>50+</p>
                                 <p className='text-sm font-semibold whitespace-nowrap'>Projects delivered</p>
                             </div>
                         </motion.div>

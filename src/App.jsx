@@ -2,6 +2,7 @@ import './App.css';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import WhatWeDo from './components/WhatWeDo';
+import Tools from './components/Tools';
 
 function App() {
     return (
@@ -10,6 +11,7 @@ function App() {
             <main className='bg-white'>
                 <Hero />
                 <WhatWeDo />
+                <Tools />
                 <div className='h-screen'></div>
             </main>
         </div>
