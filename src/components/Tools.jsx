@@ -12,7 +12,7 @@ const ToolsDetails = [
     { Title: 'JavaScript', Icon: <IoLogoJavascript /> },
     { Title: 'Node', Icon: <IoLogoNodejs /> },
     { Title: 'Wordpress', Icon: <FaWordpress /> },
-    { Title: 'Figma', Icon: <SiAdobephotoshop /> },
+    { Title: 'Photoshop', Icon: <SiAdobephotoshop /> },
     { Title: 'Illustrator', Icon: <SiAdobeillustrator /> },
 ];
 
@@ -24,14 +24,14 @@ const Tools = () => {
     };
 
     return (
-        <section className="mx-auto max-w-7xl py-24 px-6 lg:px-8">
+        <section className="mx-auto max-w-lg lg:max-w-[1168px] py-24 px-6 lg:px-8">
             <motion.div
-                className="flex justify-between"
+                className="flex flex-col justify-center items-center gap-8 lg:gap-0 lg:text-start lg:flex-row lg:justify-between lg:items-center"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
             >
-                <h2 className="text-4xl max-w-sm text-gray-500">
+                <h2 className="text-4xl w-full max-w-96 lg:max-w-sm text-gray-500">
                     Some tools that we use{" "}
                     <AnimatePresence mode="wait">
                         <motion.span
@@ -46,7 +46,7 @@ const Tools = () => {
                         </motion.span>
                     </AnimatePresence>
                 </h2>
-                <div className="flex items-center justify-between gap-4">
+                <div className="grid grid-cols-5 gap-x-4 lg:grid-cols-9">
                     {ToolsDetails.map((tool, index) => (
                         <Tool
                             key={index}

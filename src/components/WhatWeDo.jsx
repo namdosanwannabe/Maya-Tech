@@ -10,7 +10,7 @@ import HeroImage from '../assets/icons/what-we-do-hero-image.png';
 const WhatWeDo = () => {
 
     return (
-        <section id='what-we-do' className='mx-auto max-w-[1168px] h-screen text-black pt-6 px-6 lg:px-8 mb-24'>
+        <section id='what-we-do' className='mx-auto max-w-[1168px] text-black pt-6 px-6 lg:px-8 mb-20'>
             <motion.div
                 className='w-full flex flex-col items-center justify-center text-center'
                 initial={{ opacity: 0, y: 30 }}

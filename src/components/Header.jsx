@@ -10,7 +10,7 @@ export default function Navbar() {
 
         const id = `#${item.toLowerCase().replace(/\s+/g, "-")}`;
 
-        const headerOffset = 80;
+        const headerOffset = 100;
         const element = document.querySelector(id);
         const elementPosition = element?.getBoundingClientRect().top + window.scrollY;
 
